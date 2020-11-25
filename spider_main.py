@@ -29,7 +29,9 @@ class SpiderMain(object):
                 print("failed")
         self.outputer.output_mysql()
 if __name__ =="__main__":
-    root_url = "https://www.zhihu.com/people/koname/following"
+    print('Enter you username:')
+    username = input()
+    root_url = "https://www.zhihu.com/people/%s/following" % username
     obj_spider = SpiderMain()
     obj_spider.craw(root_url)
 
