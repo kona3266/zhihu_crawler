@@ -4,7 +4,7 @@ Created on Tue Apr 16 17:49:59 2019
 
 @author: DELL
 """
-from baike_spider import url_manager, html_downloader, html_parser, html_outputer
+from spider_utils import url_manager, html_downloader, html_parser, html_outputer
 from file_formater import format_result
 class SpiderMain(object):
     def __init__(self, root_url):
